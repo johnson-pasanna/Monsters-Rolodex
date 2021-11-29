@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <div className="App">
         {this.state.monsters.map((mov) => (
-          <h1 key={mov.id}>{mov.address.geo.lat}</h1>
+          <h1 key={mov.id}>{mov.name}</h1>
         ))}
       </div>
     );
