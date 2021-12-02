@@ -21,10 +21,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CardList name="jihn" />
-        {this.state.monsters.map((mov) => (
-          <h1 key={mov.id}>{mov.name}</h1>
-        ))}
+        <CardList monsters={this.state.monsters} />
       </div>
     );
   }
