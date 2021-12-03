@@ -9,6 +9,7 @@ class App extends Component {
     this.state = {
       //first we hardcoded the mosters name but in real life we will get the data from the backened (server , database etc) we will use a resource where it will give 10 users data without actually building any kind of backended server
       monsters: [],
+      searchField: "",
     };
   }
 
@@ -21,6 +22,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <input
+          type="search"
+          placeholder="search for monster"
+          onChange={(e) => console.log(e)}
+        />
         <CardList monsters={this.state.monsters} />
       </div>
     );
